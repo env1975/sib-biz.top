@@ -1,0 +1,399 @@
+body {
+  margin: 0;
+  min-width: 960px;
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  color: #222222;
+  background-color: #eff2f5;
+  background-image: url("img/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+table {
+  width: 68%;
+  border: 5px solid rgb(165, 165, 165);
+  border-spacing: 1px; 
+  padding:6px;
+  border-radius: 6px;
+}
+
+td {
+  border: 2px solid lightgray;
+  border-radius: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+}
+
+th {
+  border: 1px solid rgb(39, 10, 10);
+  border-radius: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+nav a {
+	text-decoration: none;
+}
+
+nav ul {
+	margin: 0;
+  padding: 0;
+  text-align:center;
+
+}
+
+nav li {
+	list-style-position: inside;
+	font: 14px 'Montserrat', sans-serif;
+  padding: 10px;
+}
+
+.top-menu li {
+	display: inline-block;
+	padding: 10px 10px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.top-menu li.active {
+	background: #29c5e6;
+	color: #fff;
+}
+
+.top-menu a {
+	color: #b2b2b2;
+}
+
+.top-menu {border-bottom: 1px dotted rgb(156, 183, 206);}
+
+
+img {border:2px solid rgb(71, 88, 114); border-radius:10px;
+}
+
+
+.container {
+  max-width: 928px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.page-header {
+  margin: 0 0 160px;
+  padding: 32px 0 32px;
+}
+
+.page-header .container,
+.page-footer .container {
+  max-width: 1408px;
+  text-align: right;
+}
+
+.page-header a {
+  margin-left: 56px;
+  color: #288be6;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.header-email {
+  padding-left: 30px;
+  background-image: url("img/icon-email-header.svg");
+}
+
+.header-phone {
+  padding-left: 25px;
+  background-image: url("img/icon-phone-header.svg");
+}
+
+.header-facebook {
+  padding-left: 30px;
+  background-image: url("img/icon-facebook-header.svg");
+}
+
+h1{
+  text-shadow: 7px 6px 5px #999;
+}
+
+.hero-image {
+  margin-bottom: 620px;
+}
+
+.hero-image .container {
+  max-width: 1408px;
+  text-align: center;
+}
+
+.heading {
+  margin: 0 0 16px;
+  font-family: "Old Standard TT", "Times", "Times New Roman", serif;
+  font-size: 88px;
+  line-height: 96px;
+  font-weight: 400;
+}
+
+.hero-image p {
+  margin: 0;
+  font-size: 38px;
+  line-height: 48px;
+}
+
+.intro {
+  margin: 0 0 120px;
+}
+
+.subheading {
+  margin: 0 0 56px;
+  font-family: "Old Standard TT", "Times", "Times New Roman", serif;
+  font-size: 64px;
+  line-height: 80px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.audio {text-align: center;}
+  
+
+.user-image {
+  margin: 0 0 24px;
+  margin-top: 24px;
+  text-align: center;
+  transition-property: width, height;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+}
+.user-image:hover{
+  width: 1008px;
+  height: 730px;
+}
+
+
+.intro h3,
+.portfolio h3 {
+  margin: 0 0 12px;
+  font-size: 38px;
+  line-height: 40px;
+  font-weight: 500;
+}
+
+.intro p {
+  margin: 0 0 32px;
+}
+
+.newlife {
+  margin-top: -55px;
+  padding: 0;
+}
+
+.skills-list {
+  margin: 0;
+  padding: 0;
+}
+
+.skills-list dt {
+  padding-left: 32px;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.skill-html {
+  background-image: url("img/icon-html.svg");
+}
+
+.skill-css {
+  background-image: url("img/icon-css.svg");
+}
+
+.level {
+  margin: 4px 0 16px;
+  padding: 0;
+  height: 14px;
+  font-size: 0;
+  background-color: #ffffff;
+  border: 1px solid #86c3fa;
+  border-radius: 8px;
+}
+
+.level div {
+  margin: 1px;
+  height: 12px;
+  background-color: #288be6;
+  border-radius: 6px;
+}
+
+.portfolio {
+  margin: 0 0 120px;
+}
+
+.projects {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.projects li {
+  margin: 0 0 80px;
+}
+
+.project-image {
+  margin: 0 0 24px;
+  text-align: center;
+}
+
+.projects p {margin: 0 0 24px;}
+
+.button {
+  padding: 6px 20px;
+  display: inline-block;
+  vertical-align: baseline;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+ background-color: #3e8fdb;
+  color: #ffffff;
+  border: 3px solid #496a9b; 
+  margin-bottom: 25px; 
+}
+.button:hover {
+  cursor: pointer;
+  box-shadow: 4px 4px crimson;
+}
+
+
+.page-footer {
+  padding: 40px 0;
+  background-color: #3e8fdb;
+}
+
+.page-footer a {
+  margin-left: 56px;
+  color: #ffffff;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.footer-email {
+  padding-left: 30px;
+  background-image: url("img/icon-email-footer.svg");
+  
+}
+
+.footer-phone {
+  padding-left: 25px;
+  background-image: url("img/icon-phone-footer.svg");
+}
+
+  .footer-facebook {
+    padding-left: 27px;
+    background-image: url("img/icon-facebook-footer.svg");
+  }
+
+  .Diploma {
+    margin-right: 5px;
+    text-align: left;
+    transition-property: width, height;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    float: left 
+  }
+  .Diploma:hover{
+    width: 1008px;
+    height: 730px;
+  }
+
+  .Arabic {
+    margin-right: 5px;
+    text-align: left;
+    transition-property: width, height;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    float: left 
+  }
+  .Arabic:hover{
+    width: 1008px;
+    height: 730px;
+  }
+ 
+  .c-2013 {
+    text-align: left;
+    transition-property: width, height;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    float: left
+  }
+  .c-2013:hover{
+    width: 1008px;
+    height: 730px;
+  }
+
+  .c-2014 {
+    margin-left: 5px;
+    text-align: left;
+    transition-property: width, height;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    float: left
+  }
+  .c-2014:hover{
+    width: 1008px;
+    height: 730px;
+  }
+
+  .c-2015 {
+    margin-left: 5px;
+    text-align: left;
+    transition-property: width, height;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    float: left
+  }
+  .c-2015:hover{
+    width: 1008px;
+    height: 730px;
+  }
+
+  .Als {
+    margin-bottom: 0;
+    text-align: left;
+    transition-property: width, height;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    float: left;
+  }
+  .Als:hover{
+    width: 730px;
+    height: 1008px;
+  }
+ 
+  .BG {
+    margin-left: 5px;
+    transition-property: width, height;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    margin-bottom: 0;
+  }
+  .BG:hover{
+    width: 730px;
+    height: 1008px;
+  }
+
+  .button-2 {
+    padding: 6px 20px;
+    display: inline-block;
+    vertical-align: baseline;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 4px;
+   background-color: #3e8fdb;
+    color: #ffffff;
+    border: 3px solid #496a9b; 
+    margin-bottom: 10px; 
+    margin-top: 10px;
+  }
+  .button-2:hover {
+    cursor: pointer;
+    box-shadow: 4px 4px crimson;
+  }
