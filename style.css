@@ -369,14 +369,14 @@ h1{
   }
  
   .BG {
+    margin-bottom: 0;
     margin-left: 5px;
+    text-align: left;
     transition-property: width, height;
     transition-duration: 2s;
     transition-timing-function: ease-in-out;
-    margin-bottom: 0;
     float: left;
   }
-
   .BG:hover {
     width: 730px;
     height: 1008px;
@@ -408,7 +408,7 @@ h1{
   }
 
   .work-history {margin-top: 50px;}
-  
+
   .button-2 {
     padding: 6px 20px;
     display: inline-block;
