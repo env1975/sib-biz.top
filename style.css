@@ -348,7 +348,7 @@ h1{
     transition-property: width, height;
     transition-duration: 2s;
     transition-timing-function: ease-in-out;
-    float: left
+    float: left;
   }
   .c-2015:hover{
     width: 1008px;
@@ -363,7 +363,7 @@ h1{
     transition-timing-function: ease-in-out;
     float: left;
   }
-  .Als:hover{
+  .Als:hover {
     width: 730px;
     height: 1008px;
   }
@@ -374,12 +374,41 @@ h1{
     transition-duration: 2s;
     transition-timing-function: ease-in-out;
     margin-bottom: 0;
+    float: left;
   }
-  .BG:hover{
+
+  .BG:hover {
     width: 730px;
     height: 1008px;
   }
 
+  .Vietnam {
+    margin-left: 5px;
+    transition-property: width, height;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    margin-bottom: 0;
+    float: left;
+  }
+  .Vietnam:hover {
+    width: 730px;
+    height: 1008px;
+  }
+
+  .Crimea-Uni {
+    margin-left: 5px;
+    text-align: left;
+    transition-property: width, height;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+  }
+  .Crimea-Uni:hover{
+    width: 1008px;
+    height: 730px;
+  }
+
+  .work-history {margin-top: 50px;}
+  
   .button-2 {
     padding: 6px 20px;
     display: inline-block;
@@ -397,3 +426,5 @@ h1{
     cursor: pointer;
     box-shadow: 4px 4px crimson;
   }
+
+  
