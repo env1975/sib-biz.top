@@ -300,6 +300,23 @@ h1{
     background-image: url("img/icon-facebook-footer.svg");
   }
 
+.education {
+  margin-top: 170px;
+}
+
+  .html-academy {
+    margin-right: 5px;
+    text-align: left;
+    transition-property: width, height;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    float: left 
+  }
+  .html-academy:hover{
+    width: 730px;
+    height: 1008px; 
+  }
+
   .Diploma {
     margin-right: 5px;
     text-align: left;
