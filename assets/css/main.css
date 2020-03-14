@@ -2124,6 +2124,8 @@ input, select, textarea {
 		#top p {
 			font-size: 1.5em;
 			line-height: 1.75em;
+			color: #383838;
+			font-weight: 500;
 		}
 
 			#top p a {
