@@ -173,40 +173,36 @@
 							</article>
 						</div>
 					</div>
-					<footer>
+				<footer>
 						<p>Почему бы вам не связаться со мной прямо сейчас?</p>
 						<a href="#contact" class="button large scrolly">Напишите мне письмо</a>
 					</footer>
 				</div>
 			</article>
 			
-		<!-- Contact -->
+		 
 			<article id="contact" class="wrapper style4">
 				<div class="container medium">
 					<header>
 						<h2>Давайте сотрудничать!</h2>
-						<p>Просто напишите мне письмо в форме ниже или свяжитесь со мной через 
+						<p>Форма отправки письма пока не работает, поэтому, свяжитесь со мной через 
 						   социальные сети. Я обязательно отвечу.</p>
 					</header>
 					<div class="row">
 						<div class="col-12">
-							<?php
-//проверяем, существуют ли переменные в массиве POST
-if(!isset($_POST['fio']) and !isset($_POST['email'])){
- ?>
 							<form method="post" action="send.php">
 								<div class="row">
 									<div class="col-6 col-12-small">
-										<input type="text" name="name" id="name" placeholder="Ваше имя" required />
+										<input type="text" name="name" id="name" placeholder="Ваше имя (Форма пока не работает)" required />
 									</div>
 									<div class="col-6 col-12-small">
-										<input type="text" name="email" id="email" placeholder="Email" required />
+										<input type="text" name="email" id="email" placeholder="Email (Форма пока не работает)" required />
 									</div>
 									<div class="col-12">
-										<input type="text" name="subject" id="subject" placeholder="Subject" required />
+										<input type="text" name="subject" id="subject" placeholder="Тема сообщения (Форма пока не работает)" required />
 									</div>
 									<div class="col-12">
-										<textarea name="message" id="message" placeholder="Message"></textarea>
+										<textarea name="message" id="message" placeholder="Ваше сообщение (Форма пока не работает)"></textarea>
 									</div>
 									<div class="col-12">
 										<ul class="actions">
@@ -215,22 +211,7 @@ if(!isset($_POST['fio']) and !isset($_POST['email'])){
 										</ul>
 									</div>
 								</div>
-							</form><?php
-						}else{
-							<?php
- 
-$to = 'hurghadardesea@yandex.ru'; // адрес получателя
-$subject = 'Письмо с сайта'; // тема письма
-$message = "Имя: {$_POST['name']}\r\n"; // добавляем имя в текст
-$message .= "E-mail: {$_POST['e-mail']}"; // добавляем 'E-mail' в текст
-$headers .= 'Content-type: text/plain; charset=utf-8' . "\r\n"; // установливаем кодировку
-$headers .= 'From: gremlin1975@mail.ru' . "\r\n"; // добавляем отправителя
- 
-if( mail($to, $subject, $message, $headers) ){
- echo '<p style="color: green;">Ваше сообщение отправлено</p>';
-}else{
- echo '<p style="color: red;">Ошибка!</p>';
-}
+							</form>
 						</div>
 						<div class="col-12">
 							<hr />
