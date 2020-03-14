@@ -190,16 +190,20 @@
 					</header>
 					<div class="row">
 						<div class="col-12">
-							<form method="post" action="#">
+							<?php
+//проверяем, существуют ли переменные в массиве POST
+if(!isset($_POST['fio']) and !isset($_POST['email'])){
+ ?>
+							<form method="post" action="send.php">
 								<div class="row">
 									<div class="col-6 col-12-small">
-										<input type="text" name="name" id="name" placeholder="Name" />
+										<input type="text" name="name" id="name" placeholder="Ваше имя" required />
 									</div>
 									<div class="col-6 col-12-small">
-										<input type="text" name="email" id="email" placeholder="Email" />
+										<input type="text" name="email" id="email" placeholder="Email" required />
 									</div>
 									<div class="col-12">
-										<input type="text" name="subject" id="subject" placeholder="Subject" />
+										<input type="text" name="subject" id="subject" placeholder="Subject" required />
 									</div>
 									<div class="col-12">
 										<textarea name="message" id="message" placeholder="Message"></textarea>
@@ -211,7 +215,22 @@
 										</ul>
 									</div>
 								</div>
-							</form>
+							</form><?php
+						}else{
+							<?php
+ 
+$to = 'hurghadardesea@yandex.ru'; // адрес получателя
+$subject = 'Письмо с сайта'; // тема письма
+$message = "Имя: {$_POST['name']}\r\n"; // добавляем имя в текст
+$message .= "E-mail: {$_POST['e-mail']}"; // добавляем 'E-mail' в текст
+$headers .= 'Content-type: text/plain; charset=utf-8' . "\r\n"; // установливаем кодировку
+$headers .= 'From: gremlin1975@mail.ru' . "\r\n"; // добавляем отправителя
+ 
+if( mail($to, $subject, $message, $headers) ){
+ echo '<p style="color: green;">Ваше сообщение отправлено</p>';
+}else{
+ echo '<p style="color: red;">Ошибка!</p>';
+}
 						</div>
 						<div class="col-12">
 							<hr />
