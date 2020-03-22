@@ -106,11 +106,12 @@ input, select, textarea {
 		-ms-transition: color .2s ease-in-out;
 		transition: color .2s ease-in-out;
 		color: #43B3E0;
-		text-decoration: underline;
+		text-decoration: none;
 	}
 
 		a:hover {
-			color: #43bff0 !important;
+			color: rgb(3, 4, 88) !important;
+			font-weight: 600;
 		}
 
 		a img {
@@ -2132,7 +2133,8 @@ input, select, textarea {
 		}
 
 			#top p a {
-				color: inherit;
+				color: #43B3E0;	
+				text-decoration: none;
 			}
 
 	#contact footer {
@@ -2171,6 +2173,7 @@ input, select, textarea {
 			-ms-transition: color .2s ease-in-out;
 			transition: color .2s ease-in-out;
 			color: inherit;
+			text-decoration: none;
 		}
 
 			#copyright a:hover {
